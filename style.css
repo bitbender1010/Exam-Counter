@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins';
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.banner {
+    padding: 50px;
+}
+
+.box {
+    position: relative;
+    /* color: white; */
+}
+
+.up {
+    width: 120px;
+    height: 100px;
+    transform: perspective(100px) rotateX(-150deg);
+}
+
+.down {
+    width: 120px;
+    height: 100px;
+    transform: perspective(100px) rotateX(150deg);
+    position: relative;
+    top: 15px;
+}
+.divider {
+    background-color: #C4C4C4;
+    width: 170px;
+    height: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+.d_left {
+    background-color: #C4C4C4;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 135px;
+    margin-top: -2.5px;
+    z-index: 3;
+}
+
+.d_right {
+    background-color: #C4C4C4;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -2.5px;
+    z-index: 3;
+}
+
+.number {
+    position: absolute;
+    font-weight: 500;
+    font-size: 150px;
+    top: 0%;
+    left: 12.5px;
+    z-index: 1;
+    width: 90px;
+    text-align: center;
+}
+
+.box_parent {
+    display: flex;
+    gap: 65px;
+}
+
+.dates {
+    /* background: yellow; */
+    width: 320px;
+}
+
+.dhms {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.counter {
+    margin: 100px;
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    padding: 20px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 430px) {
+    /* body {
+        background: pink!important;
+    } */
+
+    .up {
+        width: 100px;
+        height: 80px;
+        transform: perspective(100px) rotateX(-150deg);
+    }
+    
+    .down {
+        width: 100px;
+        height: 80px;
+        transform: perspective(100px) rotateX(150deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 130px;
+        top: -8%;
+        left: 10px;
+        z-index: 1;
+        width: 80px;
+        text-align: center;
+    }
+
+    .divider {
+        width: 135px;
+        height: 3.5px;
+        position: absolute;
+        top: 50%;
+        left: -18px;
+        z-index: 2;
+        margin-top: 0px;
+    }
+
+    .d_right {
+        width: 6px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        margin-top: -5px;
+        z-index: 3;
+    }
+
+    .d_left {
+        width: 6px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 113px;
+        margin-top: -5px;
+        z-index: 3;
+    }
+
+    .box_parent {
+        display: flex;
+        gap: 50px;
+    }
+    
+    .banner {
+        padding: 30px;
+    }
+}
