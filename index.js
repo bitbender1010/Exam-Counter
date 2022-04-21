@@ -1,5 +1,5 @@
 
-var countDownDate = new Date("April 25, 2022").getTime();
+var countDownDate = new Date("May 9, 2022").getTime();
 
 console.log(countDownDate);
 
