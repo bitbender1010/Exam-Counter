@@ -49,12 +49,11 @@ h1 {
     width: 170px;
     height: 5px;
 
+    z-index: 20!important;
     position: absolute;
     top: 50%;
     left: -25px;
     margin-top: 5px;
-    z-index: 20;
-    -webkit-transform: translate3d(0,0,0);
 }
 
 .d_left {
