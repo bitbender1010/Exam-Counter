@@ -63,7 +63,7 @@ var myfunc = setInterval(function() {
     document.getElementById("hoursLeft").innerHTML = hoursLeft;
 
     //days
-    document.getElementById("daysRight").innerHTML = daysRight;
-    document.getElementById("daysLeft").innerHTML = daysLeft;
+    document.getElementById("daysRight").innerText = daysRight;
+    document.getElementById("daysLeft").innerText = daysLeft;
 
 }, 1000)
