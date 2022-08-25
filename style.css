@@ -87,7 +87,7 @@ h1 {
     z-index: 1;
     width: 90px;
     text-align: center;
-    background: green;
+    /* background: green; */
 }
 
 .box_parent {
